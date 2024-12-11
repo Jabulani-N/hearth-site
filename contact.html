@@ -4,9 +4,87 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<style>
+    .hover-text {
+        position: relative;
+        display: inline-block;
+        /*cursor: pointer;*/ /* Changes cursor to pointer on hover */
+    }
+    .hover-text img {
+        display: none; /* Hide the image by default */
+        position: absolute;
+        top: 20px; /* Adjust position as needed */
+        left: 0;
+        width: 200px; /* Set the desired width */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        z-index: 1; /* Ensure the image appears above other content */
+    }
+    .hover-text:hover img {
+        display: block; /* Show the image on hover */
+    }
+</style>
+
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<style>
+        a:link {
+            color: white; /* Unvisited link */
+        }
+        a:visited {
+            color: white; /* Visited link */
+        }
+        a:hover {
+            color: orange; /* Mouse over link */
+        }
+        a:active {
+            color: red; /* Clicked link */
+        }
+    </style>
 <html>
 	<head>
-		<title>Generic - Solid State by HTML5 UP</title>
+		<title>Hearth</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,7 +97,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="index.html">Hearth</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -51,20 +129,90 @@
 							</div>
 						</header>
 
-						<!-- Content -->
+						<!-- within wrapper is profiles -->
 							<div class="wrapper">
 								<div class="inner">
-
-									<h3 class="major">Lorem ipsum dolor</h3>
-									<p>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
-
-									<p>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius.</p>
-
-									<h3 class="major">member 1</h3>
+                                    <!-- lChristian -->
+									<h3 class="major">Christian Ashley</h3>
 									<p>
-                                        member 1 description.
+                                        Hearth is the brainchild of this brilliant gentlebeing.
+                                        He first learned Unity to equip himself to build the kind of videogames he wanted to play.
+                                        Having developed multiple Unity skills, he utilizes them in Hearth to make the world a better place through mixed reality.
                                     </p>
+                                    <div class="container">
+                                        <img src="./images/HearthLogo - PixelArt.png" alt="Christian Ashley" class="image">
+                                        <div class="overlay">
+                                            <div class="text">
+                                                <a href="https://www.linkedin.com/in/christianashley2000/">LinkedIn</a>
+                                                <br>
+                                                <a href="https://github.com/Christian-Ashley">GitHub</a>
+                                                <br>
+                                                <a href="mailto:christianashley2000@gmail.com">christianashley2000@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Jabulani -->
+                                    <h3 class="major">Jabulani Ndhlovu</h3>
+                                    <p>
+                                        "Making the esoteric accessible" is
+                                        the motto of this documentation-loving software engineer.
+                                        Jabulani is specialized in machine learning
+                                        and all things Python.
+                                        <br>
+                                        Working on Hearth with a team of Unity specialists,
+                                        "if it's outside of Unity, it's inside my scope."
 
+                                    </p>
+                                    <div class="container">
+                                        <img src="./images/headshot/Jabulani.jpg" alt="Jabulani Ndhlovu" class="image">
+                                        <div class="overlay">
+                                            <div class="text">
+                                            <a href="https://www.linkedin.com/in/jabulani-ndhlovu/">LinkedIn</a>
+                                            <br>
+                                            <a href="https://github.com/Jabulani-N">GitHub</a>
+                                            <br>
+                                            <a href="mailto:jabulani.ndh@gmail.com">jabulani.ndh@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Kortlan -->
+                                    <h3 class="major">Kortlan Blocker</h3>
+                                    <p>
+                                        Kortlan profile description
+
+                                </p>
+                                <div class="container">
+                                    <img src="./images/HearthLogo - PixelArt.png" alt="Kortlan" class="image">
+                                    <div class="overlay">
+                                        <div class="text">
+                                        <a href="https://www.linkedin.com/in/kortlan-blocker-2673il/">LinkedIn</a>
+                                        <br>
+                                        <a href="https://github.com/Muncherxyz">GitHub</a>
+                                        <br>
+                                        <a href="mailto:19kortlanblocker@gmail.com">19kortlanblocker@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Kaleb -->
+                                <h3 class="major">Kaleb Kuykendall</h3>
+                                <p>
+                                    Kaleb profile description
+
+                            </p>
+                            <div class="container">
+                                <img src="./images/headshot/kaleb-Kuykendall-headshot.jpg" alt="Kaleb" class="image">
+                                <div class="overlay">
+                                    <div class="text">
+                                    <a href="https://www.linkedin.com/in/kortlan-blocker-2673il/">LinkedIn</a>
+                                    <br>
+                                    <a href="https://github.com/Muncherxyz">GitHub</a>
+                                    <br>
+                                    <a href="mailto:19kortlanblocker@gmail.com">19kortlanblocker@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+<!-- links to gallery via an image -->
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
